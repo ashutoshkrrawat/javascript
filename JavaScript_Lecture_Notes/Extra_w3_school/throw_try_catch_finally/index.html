@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Error message appears here: <span id="error_message" style="color: red;"></span></p>
+
+    <p id="another_message"></p>
+</body>
+<script>
+    const error_message_element = document.getElementById ("error_message")
+
+    const temp = document.getElementById ("another_message")
+
+    let n = 5
+
+    try {
+         
+        let x = y+1;
+
+    }
+
+    catch (error) {
+        error_message_element.innerText = error.message
+    }
+</script>
+</html>

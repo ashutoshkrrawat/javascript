@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0P29Z62S3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J0P29Z62S3');
+</script>
+  <body>
+    
+    <label for="gitHubName">Kindly enter your GitHub Username:</label>
+    <input
+      type="text"
+      name="githubUsername"
+      id="gitHubName"
+      placeholder="Type and press enter!"
+      autocomplete="off"
+    />
+
+    <div class="cardHolder">
+      <section id="pfp"></section>
+      <p id="userName"></p>
+      <p id="followers"></p>
+      <p id="following"></p>
+      <p id="gitRepo"></p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

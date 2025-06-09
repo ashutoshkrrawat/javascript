@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Formatter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0P29Z62S3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J0P29Z62S3');
+</script>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <h2>Type In Your Words</h2>
+        <textarea id="input-field" placeholder="Enter your notes:" rows="5"></textarea>
+    
+      </div>
+
+      <div class="btns-container">
+        <button class="btn_uppercase">ABC</button>
+        <button class="btn_lowercase">abc</button>
+        <button class="btn_capitalize">Abc</button>
+        <button class="btn_bold">B</button>
+        <button class="btn_italic">/</button>
+        <button class="btn_underline">ABC</button>
+      </div>
+
+      <p id="output-field"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

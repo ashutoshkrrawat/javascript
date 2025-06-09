@@ -1,0 +1,42 @@
+body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: linear-gradient(to bottom, #121212, #1e1e1e); /* Dark gradient */
+        color: #e0e0e0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    input {
+        background: #1e1e1e;
+        border: 1px solid #333;
+        color: #e0e0e0;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        outline: none;
+        width: 250px;
+        text-align: center;
+    }
+    
+    button {
+        background: linear-gradient(to right, #ff8c00, #ff3b3b); /* Subtle warm gradient */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s ease-in-out;
+        margin : 20px;
+    }
+    
+    button:hover {
+        background: linear-gradient(to right, #ff3b3b, #ff8c00);
+        transform: scale(1.15);
+    }
+    

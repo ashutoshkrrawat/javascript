@@ -1,0 +1,80 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Input Field Styling */
+label {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007BFF;
+}
+
+/* Card Holder Styling */
+.cardHolder {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+/* Profile Picture */
+#pfp img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #007BFF;
+}
+
+/* Text Styles */
+#userName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#followers,
+#following,
+#gitRepo {
+    color: #555;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Hover Effects */
+.cardHolder:hover {
+    transform: scale(1.05);
+}
