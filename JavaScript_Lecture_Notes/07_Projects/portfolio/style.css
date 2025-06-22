@@ -1,0 +1,272 @@
+
+/*header*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');*{
+padding: 0;
+    margin: 0;
+}
+:root {
+  --primary-color: linear-gradient(to right, #431919, #1D2671);
+  --secondary-color: linear-gradient(to right, red, blue);
+  --text-light: #FAF5E9;
+}
+body {
+    background: var(--primary-color);
+    
+    /* background-color: #0077B6; */
+    font-family: 'poppins';
+    /* font-family: 'Baloo Bhaijaan 2'; */
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    color: var(--text-light);
+    gap: 50px;
+    list-style: none;
+}
+.middle ul li{
+    transition: all 0.5s cubic-bezier(0.03, 0.77, 0.42, 1.28) 1ms;
+}
+.middle ul li:hover{
+    scale: 1.5;
+    color: #00ADB5;
+}
+
+.logo img {
+    height: 10vh;
+    border-radius: 55px;
+}
+
+.right{
+    display: flex;
+    gap: 20px;
+}
+.right img {
+    height: 8vh;
+    
+}
+
+nav {
+    height: 10vh;
+}
+.navbreak{
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgb(227, 255, 44), rgb(241, 4, 75));
+}
+
+/*SECTION 1*/
+main{
+    color: var(--text-light);
+}
+.section1{
+    color: var(--text-light);
+   display: flex;
+    justify-content: center;   /* Horizontally centers the whole content */
+    align-items: center;       /* Vertically aligns image & text */
+    gap: 3rem;                 /* Space between image and text */
+    padding: 2rem;
+}
+.section1 img{
+    height: 45vw;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    /* border-bottom-right-radius: 45%;
+    border-bottom-left-radius: 45%; */
+
+    position: relative;
+}
+.section1 h1{
+    font-family: 'Libre Baskerville';
+    position: absolute;
+    left: 25vh;
+    top: 35vh;
+    z-index: 1;
+    font-size: 4rem;
+}
+.section1 h2{
+    font-family: 'Libre Baskerville';
+    position: absolute;
+    right: 0vh;
+    top: 90vh;
+    z-index: 1;
+    font-size: 4rem;
+}
+.yellow {
+  background: linear-gradient(orange);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+/*SECTION 2*/
+.section2{
+    padding: 10vh;
+    /* margin-top: 100px; */
+    animation: text-appear both;
+    animation-timeline: view(5% 10%);
+    animation-range: entry 20% cover 100vh;
+}
+@keyframes text-appear {
+    from{
+        opacity: 0;
+        transform: translateY(10vh);
+        scale: 0.8;
+    }
+    to{
+        
+        opacity: 1;
+        transform: translateY(0px);
+        scale: 1;
+    }
+    
+}
+.content1{
+    /* margin-top: 100px; */
+    display: flex;
+    gap: 5vh;
+    align-items: center;
+}
+.section2 h1{
+    font-size: 6rem;
+    /* margin-bottom: 10px; */
+    margin-top: -10vh;
+}
+.section2 h2 p{
+    line-height: 1.7;
+    font-size: 2.3rem;
+}
+.section2img{
+    border-radius: 15vh;
+}
+
+/*SECTION 3*/
+
+.section3{
+    animation: text-appear both;
+    animation-timeline: view(5% 10%);
+    animation-range: entry 20% cover 100vh;
+}
+.section3 h1{
+    font-size: 6rem;
+
+}
+.box{
+    /*here flex is used to center the text inside the box*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    height: 20vh;
+    width: 20vh;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.03, 0.77, 0.42, 1.28) 1ms;
+    border: 2px solid white;
+}
+.content2{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+.box:hover{
+    scale: 1.5;
+    color: #0ee4ef;
+}
+
+/*SECTION 4*/
+.section4 h1{
+    margin-top: 10vh;
+    font-size: 6rem;
+}
+/*TIMELINE STYLES FOR SECTION 4*/
+/*SECTION 4*/
+.section4 {
+    padding: 5vh 2rem;
+}
+.section4 h1{
+    margin-top: 10vh;
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+/*TIMELINE STYLES FOR SECTION 4*/
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #EEEEEE;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-logo {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+.timeline-logo img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px solid #EEEEEE;
+}
+
+.timeline-content {
+    width: 50%;
+    padding-left: 2rem;
+}
+
+.timeline-content span {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.fade-up{
+    animation: fadeup both;
+    animation-timeline: view(5% 10%);
+    animation-range: entry 0% cover 15%;
+
+}
+@keyframes fadeup {
+    from{
+        opacity: 0;
+        transform: translateY(10px) scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        
+    }
+    
+}
